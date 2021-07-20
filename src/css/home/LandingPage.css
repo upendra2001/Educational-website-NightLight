@@ -1,0 +1,26 @@
+.landing-page .container-fluid{ 
+    /* width: 100%; */
+    padding: 0;
+}
+
+ .banner-heading{
+    font-size: 4vw ;
+    border:2px solid red ;
+    color: #cfb5ff;
+    max-width: 454px;
+    font-family: 'Encode Sans SC', sans-serif; 
+ }  
+ .landing-page-main img{ 
+    width: 100%; 
+    height: auto;
+} 
+ .landing-page-main{
+    position: relative; 
+} 
+ .landing-page-row{
+    position: absolute;
+    top: 40%;
+    left: 15.4%;
+    transform: translate(-50%, -50%);
+    max-width: 28%;
+}
