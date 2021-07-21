@@ -2,8 +2,21 @@ import React, { useState } from 'react'
 import '../../css/header/header.css'
 import { Link } from 'react-router-dom'
 
-export default function Header() {
+export default function Header(props) {
+
+    const {
+        setLoggedIn,
+        loggedIn
+    } = props 
     const [toggle, setToggle] = useState(false)
+
+    const handleLogout = (e) =>{
+        setLoggedIn(false);
+        localStorage.removeItem("loginToken") 
+    }
+
+
+
     return (
         <div className="header-main">
             <nav className="navbar navbar-light fixed-top navbar-expand-md navbar-no-bg">
@@ -20,7 +33,11 @@ export default function Header() {
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/login">Login</Link>
+                            {
+                                loggedIn?
+                                <div className="nav-link" onClick={(e)=> handleLogout(e)}>Logout</div>:
+                                <Link className="nav-link" to="/login">Login</Link>
+                            }
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/signup">Signup</Link>
