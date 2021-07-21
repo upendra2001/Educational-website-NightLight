@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPasswod';
-import Faltu from './components/faltu';
+
 
 function App() {
     return (
@@ -15,22 +15,21 @@ function App() {
                 <Header />
                 <Switch>
                     <Route exact path='/'>
-                        <LandingPage/>
+                        <LandingPage />
                     </Route>
                     <Route exact path='/login'>
-                        <Login/>
+                        <Login />
                     </Route>
                     <Route exact path='/signup'>
-                        <SignUp/>
+                        <SignUp />
                     </Route>
                     <Route exact path='/reset'>
-                        <ResetPassword/>
+                        <ResetPassword />
                     </Route>
                     <Route exact path='/about'>
-                        <Faltu/>
                     </Route>
                 </Switch>
-                <Footer /> 
+                <Footer />
             </div>
         </Router>
     );
