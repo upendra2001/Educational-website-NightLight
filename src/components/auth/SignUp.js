@@ -4,7 +4,7 @@ import '../../css/auth/signUp.css'
 
 export default function SignUp() {
 
-    const [name, setName] = useState('') 
+    const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -23,7 +23,7 @@ export default function SignUp() {
                 <div className="form-group row signUp-input">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Name</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" value={name} id="inputName3" placeholder="Enter Name" onChange={(e)=>setName(e.target.value)} />
+                        <input type="text" className="form-control" value={name} id="inputName3" placeholder="Enter Name" onChange={(e) => setName(e.target.value)} />
                     </div>
                 </div>
                 <div className="form-group row signUp-input">
@@ -46,11 +46,13 @@ export default function SignUp() {
                 </div>
                 <div className="form-group row signUp-input">
                     <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Confirm Password</label>
-                    <div className="col-sm-10">
+                    {/* <label htmlFor="inputPassword3" className="col-form-label">Confirm Password</label> */}
+                    <div className="col-sm-10 ">
                         <input type="password" className="form-control" id="inputConfirmPassword3" placeholder="Enter Password" />
+                        {/* <input type="password" className="form-control" id="inputConfirmPassword3" placeholder="Enter Password" /> */}
                     </div>
                 </div>
-                <button onClick={(e)=> handleSignUp(e)} className="login-button">Register</button>
+                <button onClick={(e) => handleSignUp(e)} className="signUp-button">Register</button>
                 <p>Already have an Account? <Link to='/login'>Login</Link></p>
             </form>
         </div>

@@ -22,7 +22,7 @@ export default function Login() {
                 <div className="form-group row">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Name</label>
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" value={name} id="inputName3" placeholder="Enter Name" onChange={(e)=>setName(e.target.value)} />
+                        <input type="text" className="form-control" value={name} id="inputName3" placeholder="Enter Name" onChange={(e) => setName(e.target.value)} />
                     </div>
                 </div>
                 <div className="form-group row">
@@ -37,10 +37,10 @@ export default function Login() {
                         <input type="password" className="form-control" id="inputPassword3" placeholder="Enter Password" />
                     </div>
                 </div>
-                <button onClick={(e)=> handleLogin(e)} className="login-button">Login</button>
+                <button onClick={(e) => handleLogin(e)} className="login-button">Login</button>
                 <p>Don't have an Account? <Link to='/signup'>Register</Link></p>
                 <p>Forgot Password? <Link to='/reset'>Reset</Link></p>
-                
+
             </form>
         </div>
     )
