@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../css/home/LandingPage.css'
-import bannerImage from '../../assets/324698.jpg'
+import bannerImage from '../../assets/324698.jpg' 
+import Collections from './Collections'
 
 export default function LandingPage() {
     return (
@@ -14,7 +15,7 @@ export default function LandingPage() {
                 </div>
             </div>
 
-
+            <Collections/>
         </div>
     )
 }
