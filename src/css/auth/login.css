@@ -1,23 +1,69 @@
-.login-main{
+.login-main {
     margin-top: 150px;
     /* max-width: 400px; */
 }
 
-.login-main .container{
+.login-main .container {
     max-width: 480px;
 }
 
-.login-main form h2{
+.login-main form h2 {
     text-align: center;
     margin-bottom: 60px;
 }
-.login-container{
+
+.login-container {
     background-color: #eaeaea;
     border-radius: 10px;
     padding: 30px 40px;
-    border: 2px solid black;
+    max-width: 500px;
+    margin-top: 200px;
 }
-.login-button{
+
+.login-container h2 {
+    text-align: center;
+    margin: 20px 0px 50px 0;
+}
+
+.login-button {
     display: block;
-    margin: 0 auto;
+    cursor: pointer;
+    margin: 30px auto 20px;
+    padding: 6px 30px;
+    border-radius: 21px;
+    background-color: #7a7a7a;
+    outline: none;
+    color: #fff;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background-color: #d1d1d1;
+    color: #616161;
+}
+
+.dont-have-an-account {
+    font-size: 14px;
+}
+
+.forgot-password {
+    font-size: 14px;
+}
+
+.dont-have-an-account a {
+    font-size: 16px;
+}
+
+.forgot-password a {
+    font-size: 16px;
+}
+.required-error{
+    text-align: center;
+    color: red;
+    font-size: 13px;
+}
+.required-error-icon{ 
+    cursor: pointer;
+    font-size: 15px;
 }
