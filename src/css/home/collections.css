@@ -9,7 +9,14 @@
     align-items: center;
     justify-content: center;
 }
+a{
+    color: white;
+}
 
+a:hover{
+    text-decoration: none;
+    color: white;    
+}
 
 .col-items {
     min-width: 250px;
@@ -40,13 +47,15 @@
 
 .col-mid p {
     text-align: center;
-    margin: 50% 0
+    margin: 50% 0;
     /* font-size: 1.5vw; */
 }
 
 .col-left-top{
     background-image: url(../../assets/articles-004_adobespark\ \(1\).jfif); 
+    
 }
+
  
 .col-left-mid{
     background-image: url(../../assets/RB_Dig_KIQuiz_stage_00_image_caption_none_adobespark.jfif);
