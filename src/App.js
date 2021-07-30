@@ -7,6 +7,7 @@ import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPasswod'; 
 import { useState, useEffect } from 'react'
+import Article from './components/articles/Article';
 
 function App() {
     const [loggedIn, setLoggedIn] = useState(false)
@@ -34,6 +35,9 @@ function App() {
                     <Route exact path='/reset'>
                         <ResetPassword/>
                     </Route> 
+                    <Route exact path='/articles'>
+                        <Article/>
+                    </Route>
                 </Switch>
                 <Footer /> 
             </div>

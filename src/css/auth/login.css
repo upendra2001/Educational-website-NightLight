@@ -67,3 +67,7 @@ button:focus {
     cursor: pointer;
     font-size: 15px;
 }
+.login-error{
+    color: red;
+    font-size: 13px;
+}
