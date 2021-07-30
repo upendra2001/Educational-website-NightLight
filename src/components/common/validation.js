@@ -10,6 +10,8 @@ export const handleNameError = (text) => {
 }
 
 export const handleEmailError = (email) => {
+    if(!email)
+    return true;
     let pos1 = email.search('@');
     let ct = 0;
     let i;
@@ -35,7 +37,8 @@ export const handleEmailError = (email) => {
         if ((email.length - 1) - pos2 < 2)
             return false;
         for (i = pos2; i < email.length; i++) {
-            if (!email[i].match(/^[a-zA-Z]+$/) && email[i] === ' ') {
+            if (!email[i].match(/^[a-zA-Z]+$/) && email[i]===' ') {
+                // console.log((email[i]))
                 return false;
             }
         }
@@ -46,6 +49,8 @@ export const handleEmailError = (email) => {
 
 export const handlePasswordError = (password) => {
     console.log(password);
+    if(!password)
+    return true;
     // let flag = false;
     // const special = ['~', '`', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-'];
     // let i, j;

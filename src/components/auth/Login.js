@@ -16,11 +16,15 @@ export default function Login(props) {
     const handleLogin = (e) => {
 
         e.preventDefault();
-        (name === '' || email === '' || password === '') ? setRequiredError(true) : setRequiredError(false)
-        // const loggedIn = localStorage.getItem("loginToken");
-        // if (loggedIn) {
-        //   setLoggedIn(true);
-        // } else alert("wrong password or email");
+        if (name === '' || email === '' || password === ''){
+            setRequiredError(true) 
+            return
+        }
+        else setRequiredError(false)
+        const loggedIn = localStorage.getItem("loginToken");
+        if (loggedIn) {
+            setLoggedIn(true);
+        } else alert("wrong password or email");
     };
 
     if (loggedIn) return <Redirect to="/" />;
@@ -58,7 +62,7 @@ export default function Login(props) {
                                 }}
                             />
                             {
-                                (nameError) ? <p>{nameError}</p> : null
+                                (nameError) ? <p className="login-error mb-0">{nameError}</p> : null
 
                             }
                         </div>
@@ -81,7 +85,7 @@ export default function Login(props) {
                                 placeholder="Enter Email"
                             />
                             {
-                                (emailError) ? <p>{emailError}</p> : null
+                                (emailError) ? <p className="login-error mb-0">{emailError}</p> : null
                             }
                         </div>
                     </div>
@@ -98,12 +102,12 @@ export default function Login(props) {
                                 value={password}
                                 onChange={(e) => {
                                     setPassword(e.target.value)
-                                    if (!handlePasswordError(e.target.value)) setPasswordError("Password must be alphanumeric and it should be atleast of 8 characters");
+                                    if (!handlePasswordError(e.target.value)) setPasswordError("Password must be alphanumeric & it should be atleast of 8 characters");
                                     else setPasswordError('');
                                 }}
                             />
                             {
-                                (passwordError) ? <p>{passwordError}</p> : null
+                                (passwordError) ? <p className="login-error mb-0">{passwordError}</p> : null
                             }
                         </div>
                     </div>

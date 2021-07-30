@@ -4,7 +4,7 @@
 }
 
 .signUp-main .container{
-    max-width: 500px;
+    max-width: 480px;
 }
 
 .signUp-main form h2{
@@ -18,6 +18,31 @@
 } 
 .signUp-button{
     display: block;
-    margin: 0 auto;
+    cursor: pointer;
+    margin: 30px auto 20px;
+    padding: 6px 30px;
+    border-radius: 21px;
+    background-color: #7a7a7a;
+    outline: none;
+    color: #fff;
+} 
+
+button:hover,
+button:focus {
+    outline: none;
+    background-color: #d1d1d1;
+    color: #616161;
 }
 
+
+.signUp-error{
+    color: red;
+    font-size: 13px;
+}
+
+.already-have-an-account{
+    font-size: 14px;
+}
+.already-have-an-account a{
+    font-size: 16px;
+}

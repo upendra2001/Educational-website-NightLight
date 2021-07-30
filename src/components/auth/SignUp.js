@@ -41,7 +41,7 @@ export default function SignUp(props) {
                             else setNameError('');
                         }} />
                         {
-                            (nameError) ? <p>{nameError}</p> : null
+                            (nameError) ? <p className="signUp-error mb-0">{nameError}</p> : null
 
                         }
                     </div>
@@ -55,7 +55,7 @@ export default function SignUp(props) {
                             else setPhoneError('');
                         }} />
                         {
-                            (phoneError) ? <p>{phoneError}</p> : null
+                            (phoneError) ? <p className="signUp-error mb-0">{phoneError}</p> : null
 
                         }
                     </div>
@@ -69,20 +69,20 @@ export default function SignUp(props) {
                             else setEmailError('');
                         }} />
                         {
-                            (emailError) ? <p>{emailError}</p> : null
+                            (emailError) ? <p className="signUp-error mb-0">{emailError}</p> : null
                         }
                     </div>
                 </div>
                 <div className="form-group row signUp-input">
                     <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                     <div className="col-sm-10">
-                        <input type="password" className="form-control" id="inputPassword3" placeholder="Enter Password" value={password} onChange={(e) => {
+                        <input type="password" className="form-control" id="inputPassword3" autoComplete="new-password" placeholder="Enter Password" value={password} onChange={(e) => {
                             setPassword(e.target.value)
                             if (!handlePasswordError(e.target.value)) setPasswordError("Password must be alphanumeric and it should be atleast of 8 characters");
                             else setPasswordError('');
                         }} />
                         {
-                            (passwordError) ? <p>{passwordError}</p> : null
+                            (passwordError) ? <p className="signUp-error mb-0">{passwordError}</p> : null
                         }
                     </div>
                 </div>
@@ -93,7 +93,7 @@ export default function SignUp(props) {
                     </div>
                 </div>
                 <button onClick={(e) => handleSignUp(e)} className="signUp-button">Register</button>
-                <p>Already have an Account? <Link to='/login'>Login</Link></p>
+                <p className="already-have-an-account">Already have an Account? <Link to='/login'>Login</Link></p>
             </form>
         </div>
     )
