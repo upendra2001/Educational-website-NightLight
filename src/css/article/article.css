@@ -42,7 +42,7 @@
     border:1px solid lightcoral;
     border-radius:6px;
     background-color: white;
-    padding: 7px 15px;
+    padding: 5px 15px;
     cursor: pointer; 
 }
 .article-buttons button i{
@@ -58,7 +58,9 @@
     /* margin-left:30%; */
     /* margin-right:4%; */
 }
-
+.article-buttons-liked{
+    margin: 0 10px;
+}
 @media (max-width: 600px) {
     .img1 {
         width: 100%;

@@ -21,7 +21,7 @@ export default function Article() {
                 </div>
                 <div className="article-buttons">
                     <button className="article-buttons-previous">Previous</button>
-                    <button onClick={(e) => {
+                    <button className="article-buttons-liked" onClick={(e) => {
                         e.preventDefault()
                         if (likeToggler === 0) {setLikeToggler(1);setLikes(likes+1);}
                         else {setLikeToggler(0);setLikes(likes-1)} 
