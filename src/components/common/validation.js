@@ -76,3 +76,8 @@ export const handlePhoneError = (phone) => {
 }
 
 
+export const handleConfirmPasswordError = (confirmPassword,password) => {
+    if(confirmPassword!==password) return false;
+    return true;
+
+}

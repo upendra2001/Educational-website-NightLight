@@ -10,9 +10,6 @@
     justify-content: center;
 }
 
-.container-col {
-    /* dis */
-}
 
 .col-items {
     min-width: 250px;
@@ -29,7 +26,7 @@
 .col-items p {
     text-align: center;
     margin: 25% 0;
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 
 .col-mid {
@@ -43,8 +40,8 @@
 
 .col-mid p {
     text-align: center;
-    margin: 10% 10%;
-    font-size: 50px;
+    margin: 50% 0
+    /* font-size: 1.5vw; */
 }
 
 .col-left-top{
@@ -58,11 +55,8 @@
    color:white;
     
 }
-.col-left-bottom img{
-    width: 100%;
-    height: 170px;
-    border-radius: 7px;
-  
+.col-left-bottom {
+    /* background-image: url(../../assets/resume-copy-on-work-place-260nw-1434400523.jpg);   */
 }
 .col-right-top{
     background-image: url(../../assets/photo-1581447109217-19026003eba5_adobespark\ \(1\).jfif);
@@ -76,12 +70,79 @@
 .col-right-mid p{
     color:white;
 }
-.col-right-bottom img{
-    /* background-image: url(../../assets/Bhagavad-Gita-Quotes-1.jpg); */
-    width: 100%;
-    height: 168px;
-    border-radius: 7px; 
+.col-right-bottom {
+    /* background-image: url(../../assets/FAQ_0130.jpg);  */
 }
 .col-mid img{
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    /* ...............Left Col...... */
+    .main-container {
+        display: block; 
+    } 
+    .col-items p {
+        width: 100%;
+        text-align: center;
+        /* vertical-align: auto; */
+        margin: auto 0; 
+        font-size: 6vw;
+    } 
+    
+    .collection-container{
+        padding: 20px;
+    } 
+    .col-items {
+        min-width: unset;
+        max-width: none;  
+    } 
+    .col-left-mid-bottom{
+        display: flex;
+        flex-direction: row;
+    }
+    .col-left-mid, .col-left-bottom{
+        width: 47%;
+        display: inline-flex;
+        margin-top: 0;
+    }
+    .col-left-mid{
+        margin-right: 6%;
+    }
+    .col-items, .col-mid{
+        background-color: grey !important;
+        background-image: none;
+    }
+    /* -------------Right Col------------------- */
+    .col-right-top-mid{
+        display: flex;
+        flex-direction: col;
+        justify-content: center;
+    }
+    .col-right-top,.col-right-mid{
+        width: 47%;
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+    .col-right-top{
+        margin-right: 6%;
+    }
+
+    /* ..................MID COL..................... */
+
+    .col-mid{
+        max-width: none;
+        min-width: none;
+        max-height: 500px;
+        min-width: none;
+        margin: 0;
+        width: 100%; 
+    }
+    .col-left-top p,.col-right-bottom p{
+        margin:25% 0;
+    }
+    .col-mid p{ 
+        margin:10rem 0;
+        font-size: 5vw;
+    }
 }
