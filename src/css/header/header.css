@@ -42,3 +42,8 @@
 .login-button{
     margin: auto; 
 }
+@media (max-width: 500px) {
+    .header-main{
+        margin-bottom: 55px;
+    }
+}

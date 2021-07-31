@@ -8,6 +8,7 @@ import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPasswod'; 
 import { useState, useEffect } from 'react'
 import Article from './components/articles/Article';
+import QuizMaker from './components/quizzes/QuizMaker';
 
 function App() {
     const [loggedIn, setLoggedIn] = useState(false)
@@ -37,6 +38,9 @@ function App() {
                     </Route> 
                     <Route exact path='/articles'>
                         <Article/>
+                    </Route>
+                    <Route exact path='/quizmaker'>
+                        <QuizMaker/>
                     </Route>
                 </Switch>
                 <Footer /> 

@@ -13,7 +13,7 @@ export default function Collections() {
                     <Link to="/articles"><div className="col-items col-left-top">
                         <p>Article</p>
                     </div></Link>
-                    <Link><div className="col-items col-left-mid col-left-mid-bottom">
+                    <Link to="/quizmaker"><div className="col-items col-left-mid col-left-mid-bottom">
                         <p>Quizzes/MCQs</p>
                     </div></Link>
                     <Link><div className="col-items col-left-bottom col-left-mid-bottom">

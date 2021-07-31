@@ -7,9 +7,9 @@ export default function LandingPage() {
     return (
         <div className="landing-page">
             <div className="container-fluid landing-page-main">
-                <img src={bannerImage} alt="page"/>
+                {/* <img src={bannerImage} alt="page"/> */}
                 <div className="row landing-page-row">
-                    <div className="col-sm banner-heading">
+                    <div className="banner-heading">
                         Learn Like a PRO With Upendra and Vaibhav
                     </div>
                 </div>
