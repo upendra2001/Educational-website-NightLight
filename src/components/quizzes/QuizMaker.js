@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Question from './Question'
 import '../../css/quizzes/quizMaker.css'
 
 export default function QuizMaker() {
+    const [questions, setQuestions] = useState([])
+    
+    
+    const [numberOfQuestions, setNumberOfQuestions] = useState(1)
     return (
         <div className="quizmaker-container">
             <div className="quizmaker-main-container">
@@ -19,7 +23,10 @@ export default function QuizMaker() {
                         <input type="text" placeholder="Add Time" />
                     </div>
                 </div>
-                <Question />
+                <Question questions={questions} /> 
+                <button className="quizmaker-add-question" >Add Question</button>
+
+            <button className="quizmaker-submit">Submit</button>
             </div>
         </div>
     )

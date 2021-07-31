@@ -42,7 +42,7 @@ input{
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
-    background-color: #e2eaff; 
+    background-color: #f0f4ff; 
     padding:4px 4px;
     margin:2px 10px;
 }
@@ -63,6 +63,78 @@ input:focus{
     height:35px;
     font-size:18px;
 }
-.quizmaker-question-format label{
+.quizmaker-question label{
     font-size:20px;
+}
+
+.quizmaker-question-format{
+    background-color: #f0f4ff;
+    padding:20px;
+}
+.quizmaker-question-format input{
+    background-color: #f0f4ff;
+}
+
+.quizmaker-no-of-options{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    margin: 20px; 
+}
+
+.quizmaker-no-of-options input{
+    width: 9%;
+    text-align: center;
+}
+
+.quizmaker-no-of-options label {
+    padding: 4px 0;
+    margin: 2px 0;
+}
+
+/* -------------CODE TO REMOVE DROPDOWN FROM NUMBER ATTRIBUTE---------------------------  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------------------- */
+
+.quizmaker-options{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    margin: 20px;  
+}
+
+.quizmaker-options span{
+    padding: 4px 0;
+    margin: 2px 0;
+}
+
+.quizmaker-option-err{
+    color: red;
+    font-size: 13px;
+}
+.quizmaker-add-question{
+    /* display: flex; */
+    /* align-items:flex-end; */
+    /* justify-content: right; */
+    /* float:right; */
+    cursor:pointer;
+    /* margin:0 70%; */
+    border-radius: 5px;
+    background-color: #f0f4ff;
+    padding:3px 6px;   
+    position: absolute;
+    font-size: 13px;
+    right: 27%; 
+}
+.quizmaker-submit{
+    border-radius: 5px;
+    display:block;
+    background-color: #f0f4ff;
+    margin: 80px auto 50px auto;
+    padding: 5px 10px;
+    cursor: pointer;  
 }
