@@ -4,23 +4,42 @@
 }
 
  .banner-heading{
-    font-size: 4vw ;
-    border:2px solid red ;
+    font-size: 3.6vw ;
+    padding: 40px;
+    /* border:2px solid red ; */
     color: #cfb5ff;
     max-width: 454px;
     font-family: 'Encode Sans SC', sans-serif; 
- }  
- .landing-page-main img{ 
-    width: 100%; 
-    height: auto;
-} 
+ }   
+ 
+.landing-page{
+    height:900px; 
+}
  .landing-page-main{
-    position: relative; 
+    position: relative;  
+    height:900px; 
+    background-image: url("../../assets/324698.jpg"); 
+    background-size: cover;
+    width : 100%;
 } 
+
  .landing-page-row{
     position: absolute;
     top: 40%;
     left: 15.4%;
     transform: translate(-50%, -50%);
     max-width: 28%;
+}
+@media (max-width:500px){
+    .landing-page-main{
+        background-image: url(../../assets/banner1.jpg);
+        background-size: cover;
+        height: 537px;
+    }
+    .banner-heading{
+        height:370px;
+        margin:0 30px;
+        font-size: 34px;
+        padding: 10px;
+    }
 }

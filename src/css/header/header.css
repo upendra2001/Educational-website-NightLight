@@ -3,7 +3,7 @@
 .header-main
 {
     background-color: #f8f9fa;   
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
  
 .navbar { 
@@ -41,4 +41,9 @@
 }
 .login-button{
     margin: auto; 
+}
+@media (max-width: 500px) {
+    .header-main{
+        margin-bottom: 55px;
+    }
 }
